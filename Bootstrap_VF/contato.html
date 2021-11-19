@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESODORANT - Sua fragância inesquecível!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- criando um menu de navegação -->
+    <header>
+        <div class="barra-menu-top"></div>
+        <nav class="nav bg-dark py-4 shadow">
+            <div class="logo">
+                <a class="navbar-brand float-left mx-3 text-bold text-muted h4" href="#">DESODORANT</a>
+            </div>
+            <!-- criando lista para as categorias do menu de navegação -->
+            <ul class="nav-links">
+                <li class="nav-item float-left"><a href="home.html" class="nav-link text-white active">Home</a></li>
+                <li class="nav-item float-left">
+                    <!-- adicionando dropdown para inserir as categorias dos produtos na navegação mobile -->
+                    <a href="#" id="" class="nav-link dropdown-toggle text-white active" data-toggle="dropdown">Produtos</a>
+                    <div class="dropdown-menu">
+                        <a id="masculino" class="dropdown-item" href="#">Masculinos</a>
+                        <a id="feminino" class="dropdown-item" href="#">Femininos</a>
+                        <a id="infantil" class="dropdown-item" href="#">Infantil</a>
+                        <a id="idoso" class="dropdown-item" href="#">Idoso</a>
+                        <a id="todos" class="dropdown-item" href="#">Todos</a>
+                    </div>
+                </li>
+                <li class="nav-item float-left"><a href="contato.html" class="nav-link text-white active">Contato</a></li>
+                <li class="nav-item float-left"><a href="#" class="nav-link text-white active">Ajuda</a></li>
+            </ul>
+
+            <!-- criando a searchbox -->
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Buscar..." />
+                <a href="#" class="search-btn">
+                    <img src="./img/loupe.png" alt="Lupa" height="20" width="20" />
+                </a>
+            </div>
+
+            <!-- incorporando os burgers para criar o menu oculto pro mobile -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- criando o Jumbotrom do contato-->       
+    <div class="jumbotron">
+        <div class="container">
+            <h3>Contato</h3>
+            <p>Entre em contato conosco pelo formulário abaixo!</p>
+        </div>
+    </div>
+
+    <!-- criando o Form de contato-->
+    <div class="container">
+
+        <form>
+            <div class="form-row">
+                
+            <select class="custom-select custom-select-md mb-3">
+                <option selected>Selecione o Motivo do Contato</option>
+                <option value="1">Devolucao</option>
+                <option value="2">Criticas</option>
+                <option value="3">Elogios</option>
+                <option value="4">Solicitar um Representante</option>
+            </select>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01"></label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02"></label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefaultUsername"></label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03"></label>
+                <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault04"></label>
+                <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault05"></label>
+                <input type="text" class="form-control" id="validationDefault05" placeholder="Cep" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Aceite os termos e condicoes.
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+
+    </div>
+
+    <!-- criando os textos do final da página -->
+    <aside class="text-center bg-info text-light text-bold pt-3 pb-1 mt-4">
+        <p>Para conhecer a loja entre em contato e veja mais!</p>
+    </aside>
+
+    <footer class="bg-dark text-light text-center pt-3 pb-1">
+        <p class="mt-1"> DESODORANT&copy; 2022 <strong> Todos os direitos reservados </strong></p>
+    </footer>
+
+    <!-- adicionando os scripts do JS -->
+    <script src="js/filtro.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+
